@@ -1,0 +1,59 @@
+body{
+    max-width: 900px;
+    margin: auto;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.856);
+}
+
+#heading1, #heading2{
+    font-size: 35px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#progress{
+    margin: 50px auto;
+    padding: 20px;
+    background-color: cornsilk;
+    max-width: 500px;
+    border-radius: 30px;
+}
+
+#heading2 span{
+    font-size: 30px;
+    color: cornsilk;
+    background-color: deeppink;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 10px;
+}
+
+#progress progress{
+    height: 80px;
+    width: 400px;
+}
+
+#controls{
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: auto;
+    padding: 20px;
+    background-color: cornsilk;
+    border-radius: 30px;
+}
+
+#controls button{
+    width: 70%;
+    height: 50px;
+    margin: 20px auto;
+    background-color: deeppink;
+    border: none;
+    border-radius: 10px;
+    color: cornsilk;
+    font-size: 25px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#controls button:hover{
+    background-color: darkmagenta;
+}
