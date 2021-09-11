@@ -82,6 +82,7 @@ function strongAttackHandler() {
 function healPlayer() {
   if (playerHealthBar.value < 80) {
     playerHealthBar.value += healValue;
+    currentPlayerHealth = healValue;
     const playerDamage = dealPlayerDamage(attackValue);
     currentPlayerHealth -= playerDamage;
     writeToLog(LOG_EVENT_PLAYER_HEAL,healValue,currentMonsterHealth,currentPlayerHealth);
@@ -121,6 +122,7 @@ function oneUpLife() {
 
 function reset() {
   adjustHealthBars(maxLife);
+  oneUp.textContent = 1;
 }
 
 function writeToLog(event, value, monsterHealth, playerHealth){
