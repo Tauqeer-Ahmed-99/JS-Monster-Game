@@ -82,7 +82,7 @@ function strongAttackHandler() {
 function healPlayer() {
   if (playerHealthBar.value < 80) {
     playerHealthBar.value += healValue;
-    currentPlayerHealth = healValue;
+    currentPlayerHealth += healValue;
     const playerDamage = dealPlayerDamage(attackValue);
     currentPlayerHealth -= playerDamage;
     writeToLog(LOG_EVENT_PLAYER_HEAL,healValue,currentMonsterHealth,currentPlayerHealth);
