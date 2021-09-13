@@ -114,9 +114,9 @@ function oneUpLife() {
     writeToLog(LOG_EVENT_GAME_OVER, 'Player Got Another chance Onup has been used!', currentMonsterHealth,currentPlayerHealth);
   }
   else if( currentMonsterHealth > 0 && currentPlayerHealth <= 0 && oneUp.textContent == 0 ){
-    alert('You Lose, Monster Won!');
-   writeToLog(LOG_EVENT_GAME_OVER, 'Monster Won', currentMonsterHealth,currentPlayerHealth);
-    reset();
+  alert('You Lose, Monster Won!');
+  writeToLog(LOG_EVENT_GAME_OVER, 'Monster Won', currentMonsterHealth,currentPlayerHealth);
+  reset();
   }
 }
 
